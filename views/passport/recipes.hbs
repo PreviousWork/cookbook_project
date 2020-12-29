@@ -1,0 +1,32 @@
+
+{{!-- <br>
+<a href="/recipes/new"><button type="button" class="btn btn-danger">MAKE YOUR OWN</button></a>
+<br>
+<br> --}}
+<br>
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-1 col-sm-1"></div>
+    <div class="col-lg-11 col-sm-11"><a href="/recipes/new"><button type="button" class="btn btn-danger">MAKE YOUR OWN</button></a></div>
+  </div>
+</div>
+<br>
+<br>
+
+
+<div class = "flexrecipes">
+  {{#each recipes}}
+    <div class = "flexrecipe">
+      <br>
+        {{!--  --}}
+      <h5>{{this.name}}</h5>
+      
+      <div><img src={{image}} alt="Will fix soon"></div>
+      <br>
+        <a href="recipes/{{this._id}}"><button type="button" class="btn btn-sm btn-success">RECIPE</button></a>
+    </div>
+
+      {{!--  --}}
+  {{/each}}
+    <div class = "buffer"></div>
+</div>

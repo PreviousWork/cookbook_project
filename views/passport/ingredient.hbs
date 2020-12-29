@@ -1,0 +1,31 @@
+<br>
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-12"><h4>INGREDIENTS</h4></div>
+  </div>
+</div>
+<br>
+
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-5"><a href = "private-page"><button class ="btn btn-danger">HOME</button></a></div>
+    <div class="col-lg-5"></div>
+  </div>
+</div>
+<br>
+
+
+
+<div class = "container">
+{{#each ingredient}}
+
+  <div class="card border-warning mb-3" style="max-width: 20rem;">
+    <div class="card-header">{{name}}</div>
+    <div class="card-body">
+      <h4 class="card-title"><img src= {{image}} alt="Will fix soon" class = "ingredients"></h4>
+      <p class="card-text">{{description}}</p>
+    </div>
+  </div>
+{{/each}}
+</div>

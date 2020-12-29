@@ -1,0 +1,57 @@
+<br>
+
+
+{{!--  --}}
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-4 col-sm-2"><br><br></div>
+    <div class="col-lg-8 col-sm-5"></div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-5"><h3>{{recipe.name}}</h3></div>
+    <div class="col-lg-5"></div>
+  </div>
+</div>
+<br>
+<br>
+{{!--  --}}
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4">
+    <div id = "recipeimage"><img src ={{recipe.image}}></div>         
+    <br>
+    <button type="button" class="btn editdetail"><a href="/recipes/edit/{{recipe._id}}" class ="btn btn-sm btn-danger">EDIT</a></button>
+    <button type="button" class="btn backdetail"><a href="/recipes" class ="btn btn-sm btn-danger">BACK</a></button>
+  </div>
+  <div class="col-sm-4">
+  </div>
+</div>
+<br>
+<br>
+
+    <div class="card border-primary mb-3" >
+    <div class="card-header default-black"><h5>Ingredients</h5></div>
+    <div class="card-body">
+    <h4 class="card-title"></h4>
+    <p class="card-text default">{{recipe.ingredient}}</p></div>
+    </div>
+
+    <div class="card border-primary mb-3" >
+    <div class="card-header default-black"><h5>Instructions</h5></div>
+    <div class="card-body">
+    <h4 class="card-title"></h4>
+    <p class="card-text default">{{recipe.instruction}}</p></div>
+    </div>
+
+</div>
+    {{!-- for some reason it has to be a form inorder to pass change the db --}}
+    <button class ="btn btn-sm btn-success"><form action = "/recipes/{{recipe._id}}/delete" method = "post">DELETE</form></button></div>
+
+

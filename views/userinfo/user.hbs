@@ -1,0 +1,14 @@
+<h1> USER: </h1>
+<form action = "/{{user.name}}" method = "post">
+  <label for = "name">Name: </label>
+  <input type = "text" id = "user" name = "user">
+  
+  <label>WHAT DO YOU HAVE TO SAY?:</label>
+  <textarea name="content" cols="30" rows="10"></textarea>
+{{!-- no id on the textarea because the only purpose of 
+      the id is to connect the label to the input and
+      make it for fancy clicking purposes  --}}
+
+  <button type = "submit">POST IT!</button>
+
+</form>

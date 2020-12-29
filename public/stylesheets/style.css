@@ -1,0 +1,128 @@
+body {
+  font: 20px "Courier New", Helvetica, Arial, sans-serif;
+  color: black; }
+
+a {
+  color: rgba(255, 0, 0, 0.634); }
+
+img {
+  height: 250px;
+  width: 400px; }
+
+.navbutton {
+  width: 100px; }
+
+#logo {
+  height: 40px;
+  width: 40px; }
+
+.card-text {
+  line-height: 20px;
+  font-size: 20px; }
+
+.tutorial-intro {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 22px;
+  color: black; }
+
+.journey {
+  font-size: 20px;
+  color: #474747;
+  font-style: italic; }
+
+.editdetail {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 2px; }
+
+.backdetail {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 283px; }
+
+.default {
+  line-height: 25px;
+  color: #474747; }
+
+.default-black {
+  line-height: 25px;
+  color: black; }
+
+.appname {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  font-size: 25px; }
+
+.normal {
+  font-size: 20px; }
+
+@media only screen and (max-device-width: 600px) {
+  .nav-item {
+    font-size: 40px; }
+  .mobile-font {
+    font-size: 50px; }
+  .appname {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 25px; }
+  #logo {
+    height: 40px;
+    width: 40px; }
+  .mobile {
+    font-size: 40px;
+    font-weight: 800; }
+  .mobiletext {
+    font-size: 25px;
+    line-height: 30px; }
+  .form-control {
+    margin: 0;
+    padding: 0;
+    width: 200px; } }
+
+.flexrecipes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.nav-item {
+  display: flex; }
+
+.ingredients {
+  width: 280px;
+  height: 280px; }
+
+.border-primary {
+  height: 28em; }
+
+.form-control {
+  margin: 0;
+  padding: 0;
+  width: 200px; }
+
+.landingImage {
+  margin: 10% 25%;
+  width: 50%;
+  height: 50%; }
+
+.user {
+  position: relative;
+  font-size: 29px;
+  font-family: Arial;
+  margin: 0 25%;
+  bottom: 100px; }
+
+.login {
+  position: relative;
+  top: 7px; }
+
+/*# sourceMappingURL=style.css.map */

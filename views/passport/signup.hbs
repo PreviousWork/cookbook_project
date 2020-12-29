@@ -1,0 +1,34 @@
+
+<p class="account-message">Already have an account?</p>
+<a href="login" class = "btn btn-primary login">LOGIN</a>
+
+{{#if message}}
+    <div class="error-message">{{ message }}</div>
+  {{/if}}
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-4"> </div>
+  <div class="col-sm-4">
+  <br>
+  <br>
+  <p class = "normal mobile">SIGN UP:</p>   
+  <br>
+  <br>
+  <form action="/signup" method="POST" id="form-container">
+  <label for="username" class ="normal mobile">EMAIL:</label>
+  <input type="email" name="username" placeholder="type it!" style="font-size:20pt;" minlength='10' class="form-control" >
+  <br>
+  <br>
+  <label for="password" class ="normal mobile">PASSWORD:</label>
+  <input type="password" name="password" minlength='7' class ="form-control" style="font-size:20pt;">
+  <br>
+  <br>
+  <button class = "btn btn-primary">CREATE ACCOUNT</button>
+  </form>
+  </div>
+
+  <div class="col-sm-4"></div>
+</div>
+  {{!--  --}}
+  

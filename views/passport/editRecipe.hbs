@@ -1,0 +1,30 @@
+<h1>EDIT RECIPE</h1>
+<a href="/recipes"><button class="btn btn-danger">Back</button></a>
+
+<h2>{{name}}</h2>
+<form action="/recipes/edit/{{recipe._id}}" method="post" >
+<label>Name:</label>
+<input type="text" name="name" value="{{recipe.name}}" class="form-control">
+<br>
+<br>
+<label>Image:</label>
+<input type="text" name="image" value="{{recipe.image}}" class="form-control">
+<br>
+<br>
+<label>Ingredients:</label>
+{{#each ingredients}}
+{{#if this.yes}}
+  <input checked type="checkbox" name="ingredient" value="{{this.name}}">{{ this.name }}
+ {{/if}} 
+ {{#unless this.yes}}
+   <input type="checkbox" name="ingredient" value="{{this.name}}">{{ this.name }}
+ {{/unless}}
+{{/each}}
+<br>
+<br>
+<label>Instructions:</label>
+<textarea name="instruction" cols="30" rows="10" value = "{{recipe.instruction}}" class="form-control">{{recipe.instruction}}</textarea>
+<br>
+<br>
+<button type="submit" class="btn btn-primary">Save Recipe</button></form>
+</form>
